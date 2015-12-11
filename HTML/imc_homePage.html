@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"
+	<head>
+		<script type="text/javascript" src="../RESOURCES/js/calcularIMC.js"></script>
+		<!-- Some javascript file are at the end of this html file -->
+		<script type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="../RESOURCES/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../RESOURCES/css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../RESOURCES/css/customizado.css">
+		<title>Home Page</title>
+	</head>
+	<body>
+	    <header>
+	      <div class="nav navbar-default navbar-fixed-top navbar-inverse">
+	        <div class="container">
+	          <div class="navbar-header">
+	            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#example">
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	            </button>
+	            <a href="#" class="navbar-brand">Calculadora de IMC</a>
+	          </div>
+	          <div class="collapse navbar-collapse" id="example">
+	            <ul class="nav navbar-nav">
+	              <li> <a href="imc_homePage_us.html"> <img class="iconFlag" src="../RESOURCES/img/usFlag.png"> </a> </li>
+	              <li> <a href="imc_homePage.html"> <img class="iconFlag" src="../RESOURCES/img/brazilFlag.png"> </a> </li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>      
+	      <div class="jumbotron">
+	        <div class="container">
+	          <h3>IMC - Indice de Massa Corporal</h3>
+	          <h5>
+	          	O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Tal índice foi desenvolvido pelo polímata Lambert Quételet no fim do século XIX. Trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, ou seja, é um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS).
+	          </h5>
+	        </div>
+	      </div>
+	    </header>
+    	<div class="botao">
+		    <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modal-1">Clique Aqui e Calcule o seu IMC</a>
+    	</div>
+		<div class="container">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading">
+				<h3 class="panel-title">Instruções básicas para calcular o IMC</h3>
+				</div>
+				<div class="panel-body">
+					<div class="imgHome">
+						<img src="../RESOURCES/img/tabela.png">
+					</div>
+					<div class="imgHome">
+						<img class="imgExp" src="../RESOURCES/img/exemplo.png">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Calculadora de IMG -->
+		<div class="modal fade" id="modal-1">
+			<div class="modal-dialog modal-lg ">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+						&times;
+						</button>
+						<h3 class="modal-title">
+							Calculador IMC
+							<br/>
+							<h4 class="erro">
+								<img class="warning" src="../RESOURCES/img/warning.png">
+								Informe o peso corretamente
+							</h4>
+						</h3>
+					</div>
+					<div class="modal-body">
+						<div class="calculadora col-lg-4">
+							<form action="" method="">
+								<div class="form-group has-success">
+									<label for="element-1" class="control-label">PESO</label>
+									<input type="text" id="element-1" class="form-control" placeholder="insira o seu peso">
+								</div>
+								<div class="form-group has-success">
+									<label for="element-2">ALTURA</label>
+									<input type="text" id="element-2" class="form-control" placeholder="insira a sua altura">
+								</div>
+								<div class="form-group has-success">
+									<label >SEXO</label><br/>
+									<input type="radio" name="sexo" value="masculino"> 
+									<label>Masculino</label>
+									&#160;&#160;&#160;&#160;
+									&#160;&#160;&#160;&#160;
+									<input type="radio" name="sexo" value="feminino">
+									<label>Feminino</label>
+								</div>
+								<a href="#" class="btn btn-danger">CALCULAR</a>
+							</form>
+						</div>
+						<div class="container">
+							<div>
+								<img src="../RESOURCES/img/tabela.png"/>
+							</div>
+							<div>
+								<ul class="list-group col-lg-6">
+									<li class="list-group-item list-group-item-warning">
+										Valor IMC: &#160; <span id="resultIMC">40.45</span>
+										<br/><br/>
+										Descrição do Resultado: &#160; <span>dfgsdfgsdfgsd</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="" class="btn btn-default" data-dismiss="modal">Fechar calculadora</a>
+						<a href="" class="btn btn-primary">Limpar resultado</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../RESOURCES/js/jquery-1.11.3.min.js"></script>
+		<script src="../RESOURCES/js/bootstrap.min.js"></script>
+	</body>
+</html>
