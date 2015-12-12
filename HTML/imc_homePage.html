@@ -71,9 +71,8 @@
 						<h3 class="modal-title">
 							Calculadora de IMC
 							<br/>
-							<h4 class="erro">
-								<img class="warning" src="../RESOURCES/img/warning.png">
-								Informe o peso corretamente
+							<h4 class="erro" id="exibeErro">
+								 <span class="erro" id="erro"></span>
 							</h4>
 						</h3>
 					</div>
@@ -97,15 +96,15 @@
 									<input type="radio" name="sexo" value="feminino">
 									<label>Feminino</label>
 								</div>
-								<a href="#" class="btn btn-danger">CALCULAR</a>
+								<a href="#" class="btn btn-danger" id="realizarCalculo">CALCULAR</a>
 							</form>
 						</div>
 						<div class="container">
-							<div id="resultado">
-								<div>
-									<img src="../RESOURCES/img/tabela.png"/>
+							<div id="appearAfterResult">
+								<div class="exibeImagem">
+									<img id="mostrarImagem" />
 								</div>
-								<div>
+								<div class="descMostraResult">
 									<ul class="list-group col-lg-9">
 										<li class="list-group-item list-group-item-warning">
 											Valor IMC: &#160; <span id="resultIMC"></span>
@@ -115,7 +114,7 @@
 									</ul>
 								</div>
 							</div>
-							<div>
+							<div id="appearBeforeResult">
 								<img id="imgWait" src="../RESOURCES/img/imc.png">
 							</div>
 						</div>

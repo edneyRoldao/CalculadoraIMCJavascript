@@ -25,13 +25,12 @@
 }
 .erro{
 	color: red;
-	display: none;
 }
 .warning{
 	width: 17px;
 	height: 17px;
 }
-#resultado{
+#appearAfterResult{
 	display: none;
 	margin-right: 40px;
 }
@@ -41,3 +40,48 @@
 #imgWait{
 	width: 580px;
 }
+#resultIMC, #resultDesc{
+	color: red;
+	font-weight: bold;
+}
+#mostrarImagem{
+	height: 300px;
+}
+.descMostraResult{
+	float: left;
+	width: 600px;
+	margin-right: 100px;
+}
+.exibeImagem{
+	width: 400px;
+	margin-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
