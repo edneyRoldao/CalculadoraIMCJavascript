@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<meta charset="utf-8"
+	<meta charset="utf-8"/>
 	<head>
 		<script type="text/javascript" src="../RESOURCES/js/calcularIMC.js"></script>
+		<script type="text/javascript" src="../RESOURCES/js/jquery.maskMoney.js"></script>
+		<script type="text/javascript" src="../RESOURCES/js/mascaraInputs.js"></script>
 		<!-- Some javascript file are at the end of this html file -->
 		<script type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="../RESOURCES/css/bootstrap.min.css"/>
@@ -39,10 +41,10 @@
 	        </div>
 	      </div>
 	    </header>
+		<div class="container">
     	<div class="botao">
 		    <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modal-1">Clique Aqui e Calcule o seu IMC</a>
     	</div>
-		<div class="container">
 			<div class="panel panel-default panel-info">
 				<div class="panel-heading">
 				<h3 class="panel-title">Instruções básicas para calcular o IMC</h3>
@@ -67,7 +69,7 @@
 						&times;
 						</button>
 						<h3 class="modal-title">
-							Calculador IMC
+							Calculadora de IMC
 							<br/>
 							<h4 class="erro">
 								<img class="warning" src="../RESOURCES/img/warning.png">
@@ -80,11 +82,11 @@
 							<form action="" method="">
 								<div class="form-group has-success">
 									<label for="element-1" class="control-label">PESO</label>
-									<input type="text" id="element-1" class="form-control" placeholder="insira o seu peso">
+									<input type="text" id="element-1" class="moeda form-control" placeholder="insira o seu peso">
 								</div>
 								<div class="form-group has-success">
 									<label for="element-2">ALTURA</label>
-									<input type="text" id="element-2" class="form-control" placeholder="insira a sua altura">
+									<input type="text" id="element-2" class="moeda form-control" placeholder="insira a sua altura"/>
 								</div>
 								<div class="form-group has-success">
 									<label >SEXO</label><br/>
@@ -99,17 +101,22 @@
 							</form>
 						</div>
 						<div class="container">
-							<div>
-								<img src="../RESOURCES/img/tabela.png"/>
+							<div id="resultado">
+								<div>
+									<img src="../RESOURCES/img/tabela.png"/>
+								</div>
+								<div>
+									<ul class="list-group col-lg-9">
+										<li class="list-group-item list-group-item-warning">
+											Valor IMC: &#160; <span id="resultIMC"></span>
+											<br/><br/>
+											Descrição do Resultado: &#160; <span id="resultDesc"></span>
+										</li>
+									</ul>
+								</div>
 							</div>
 							<div>
-								<ul class="list-group col-lg-6">
-									<li class="list-group-item list-group-item-warning">
-										Valor IMC: &#160; <span id="resultIMC">40.45</span>
-										<br/><br/>
-										Descrição do Resultado: &#160; <span>dfgsdfgsdfgsd</span>
-									</li>
-								</ul>
+								<img id="imgWait" src="../RESOURCES/img/imc.png">
 							</div>
 						</div>
 					</div>
@@ -122,5 +129,7 @@
 		</div>
 		<script src="../RESOURCES/js/jquery-1.11.3.min.js"></script>
 		<script src="../RESOURCES/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../RESOURCES/js/jquery.maskMoney.js"></script>
+		<script type="text/javascript" src="../RESOURCES/js/mascaraInputs.js"></script>
 	</body>
 </html>

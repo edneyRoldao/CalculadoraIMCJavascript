@@ -38,10 +38,10 @@
 	        </div>
 	      </div>
 	    </header>
-    	<div class="botao">
-		    <a class="btn btn-primary" href="#">Clique here and find out your BMI</a>
-    	</div>
 		<div class="container">
+	    	<div class="botao">
+			    <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modal-1">Clique here and find out your BMI</a>
+	    	</div>
 			<div class="panel panel-default panel-info">
 				<div class="panel-heading">
 				<h3 class="panel-title">Basics examples to calculate the BMI</h3>
@@ -57,5 +57,76 @@
 				</div>
 			</div>
 		</div>
+		<!-- Calculadora de IMG -->
+		<div class="modal fade" id="modal-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+						&times;
+						</button>
+						<h3 class="modal-title">
+							BMI Calculator
+							<br/>
+							<h4 class="erro">
+								<img class="warning" src="../RESOURCES/img/warning.png">
+								Informe o peso corretamente
+							</h4>
+						</h3>
+					</div>
+					<div class="modal-body">
+						<div class="calculadora col-lg-4">
+							<form action="" method="">
+								<div class="form-group has-success">
+									<label for="element-1" class="control-label">WEIGHT</label>
+									<input type="text" id="element-1" class="moeda form-control" placeholder="insert your weight">
+								</div>
+								<div class="form-group has-success">
+									<label for="element-2">HEIGHT</label>
+									<input type="text" id="element-2" class="moeda form-control" placeholder="insert your height"/>
+								</div>
+								<div class="form-group has-success">
+									<label >GENDER</label><br/>
+									<input type="radio" name="sexo" value="masculino"> 
+									<label>Masculine</label>
+									&#160;&#160;&#160;&#160;
+									&#160;&#160;&#160;&#160;
+									<input type="radio" name="sexo" value="feminino">
+									<label>Feminine</label>
+								</div>
+								<a href="#" class="btn btn-danger">CALCULATE</a>
+							</form>
+						</div>
+						<div class="container">
+							<div id="resultado">
+								<div>
+									<img src="../RESOURCES/img/tabela.png"/>
+								</div>
+								<div>
+									<ul class="list-group col-lg-9">
+										<li class="list-group-item list-group-item-warning">
+											Valor IMC: &#160; <span id="resultIMC"></span>
+											<br/><br/>
+											Descrição do Resultado: &#160; <span id="resultDesc"></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<img id="aguardaResultado" src="../RESOURCES/img/bmi.png">
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="" class="btn btn-default" data-dismiss="modal">CLOSE</a>
+						<a href="" class="btn btn-primary">CLEAN</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../RESOURCES/js/jquery-1.11.3.min.js"></script>
+		<script src="../RESOURCES/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../RESOURCES/js/jquery.maskMoney.js"></script>
+		<script type="text/javascript" src="../RESOURCES/js/mascaraInputs.js"></script>
 	</body>
 </html>
